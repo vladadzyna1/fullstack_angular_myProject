@@ -1,0 +1,17 @@
+<div class="firm-details" *ngIf="firm" @fadeInOut>
+  <h2>{{ firm.name }} - {{ 'firm.details' | translate }}</h2>
+  <p>{{ 'firm.type' | translate }}: {{ firm.type }}</p>
+
+  <div *ngIf="firm.reviews && firm.reviews.length > 0">
+    <h3>{{ 'firm.reviews' | translate }}</h3>
+    <ul>
+      <li *ngFor="let review of firm.reviews">
+        <review review="{{ review }}"></review>
+      </li>
+    </ul>
+  </div>
+
+  <div *ngIf="firm.reviews && firm.reviews.length === 0">
+    <p>{{ 'firm.noreviews' | translate }}</p>
+  </div>
+</div>

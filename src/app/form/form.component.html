@@ -1,0 +1,48 @@
+<form [formGroup]="firmForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name">{{ 'firm.name' | translate }}:</label>
+    <input id="name" type="text" formControlName="name" />
+    <div
+      *ngIf="
+        firmForm.get('name')?.invalid &&
+        firmForm.get('name')?.touched
+      "
+    >
+      {{ 'firm.form_name_empty' | translate }}
+    </div>
+  </div>
+
+  <div>
+    <label for="type">{{ 'firm.type' | translate }}:</label>
+    <input id="type" type="text" formControlName="type" />
+    <div
+      *ngIf="
+        firmForm.get('type')?.invalid &&
+        firmForm.get('type')?.touched
+      "
+    >
+      {{ 'firm.form_type_empty' | translate }}
+    </div>
+  </div>
+
+  <div formArrayName="reviews">
+    <label>{{ 'firm.reviews' | translate }}:</label>
+    <button type="button" (click)="addReview()">
+      {{ 'firm.reviews_add' | translate }}
+    </button>
+    <div *ngFor="let review of reviews.controls; let i = index">
+      <input type="text" [formControlName]="i" />
+    </div>
+  </div>
+
+  <button type="submit">{{ 'firm.add' | translate }}</button>
+</form>
+
+<div>
+  <h3>{{ 'firm.form_values' | translate }}:</h3>
+  <pre>{{ firmForm.value | json }}</pre>
+</div>
+
+<div *ngIf="firmForm.invalid && firmForm.touched">
+  {{ 'firm.form_fill_all_fields' | translate }}
+</div>

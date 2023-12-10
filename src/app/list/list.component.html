@@ -1,0 +1,9 @@
+{{ 'WELCOME' | translate }}
+<div
+  class="firm-item"
+  *ngFor="let firm of firms"
+  (click)="selectFirm(firm)"
+>
+  {{ firm.name }}
+</div>
+<app-details [firm]="selectedFirm"></app-details>

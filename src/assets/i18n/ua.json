@@ -1,0 +1,14 @@
+{
+  "WELCOME": "Тут представлені найкращі фірми!",
+  "firm.name": "Назва",
+  "firm.type": "Тип",
+  "firm.reviews": "Відгуки",
+  "firm.noreviews": "Наразі відгуків немає.",
+  "firm.reviews_add": "Додати відгук",
+  "firm.add": "Додати фірм",
+  "firm.form_fill_all_fields": "Будь ласка, заповніть всі необхідні поля.",
+  "firm.form_name_empty": "Назва не має бути пустим полем!",
+  "firm.form_type_empty": "Тип не має бути пустим полем!",
+  "firm.form_values": "Значення форми",
+  "firm.details": "Деталі"
+}

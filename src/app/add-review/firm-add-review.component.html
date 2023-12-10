@@ -1,0 +1,13 @@
+<div class="review-form">
+  <div>
+    <label for="firmName">Назва компанії:</label>
+    <input type="text" id="firmName" [(ngModel)]="firmName" />
+  </div>
+
+  <div>
+    <label for="reviewText">Відгук:</label>
+    <textarea id="reviewText" rows="4" [(ngModel)]="reviewText"></textarea>
+  </div>
+
+  <button (click)="addReview()">Додати відгук</button>
+</div>

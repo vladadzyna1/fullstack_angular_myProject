@@ -1,0 +1,28 @@
+.language-selector {
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Select element styling */
+.language-selector select {
+  padding: 8px; /* Slightly reduced padding for a more compact look */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff; /* Explicitly define white background color */
+  cursor: pointer;
+  width: 100%; /* Ensure the select element spans the container width */
+  font-size: 14px; /* Adjust font size for better readability */
+}
+
+/* Option styling */
+.language-selector option {
+  padding: 5px;
+}
+
+/* Active/focus state styling */
+.language-selector select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle box shadow on focus */
+}

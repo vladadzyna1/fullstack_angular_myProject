@@ -1,0 +1,14 @@
+{
+  "WELCOME": "Here are presented best firm!",
+  "firm.name": "Name",
+  "firm.type": "Type",
+  "firm.reviews": "Reviews",
+  "firm.noreviews": "No reviews available",
+  "firm.reviews_add": "Add review",
+  "firm.add": "Add firm",
+  "firm.form_fill_all_fields": "Please, fill in all fields.",
+  "firm.form_name_empty": "Name must not me empty!",
+  "firm.form_type_empty": "Type must not me empty!",
+  "firm.form_values": "Form values",
+  "firm.details": "Details"
+}
